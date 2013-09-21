@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>Fade Panel</name>
+    <author>Creative Pulse </author>
+    <creationDate>September 2013</creationDate>
+    <copyright>(C)2009-2013 Creative Pulse. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>joomla.support@creativepulse.gr</authorEmail>
+    <authorUrl>www.creativepulse.gr</authorUrl>
+    <version>1.1</version>
+    <description>Features panels that fade in/out</description>
+    <files>
+        <filename module="mod_fadepanel">mod_fadepanel.php</filename>
+        <filename>fadepanel.js</filename>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <params>
+        <param name="interval" type="text" default="20" label="Interval" description="Interval in milliseconds between animation frames. Default: 20" />
+        <param name="step" type="text" default="7" label="Step size" description="Progress step for each animation frame. This value is anything between 0.1 to 100. Default: 7" />
+        <param name="default_width" type="text" default="" label="Default width" description="Default width in pixels" />
+        <param name="default_height" type="text" default="" label="Default height" description="Default height in pixels" />
+        <param name="image_prefix" type="text" size="40" default="images/stories/" label="Image prefix" description="Image prefix will be used as a prefix for the URLs of the image sources. Default: images/stories/" />
+        <param name="source" type="textarea" rows="7" cols="40" default="" label="HTML Source" description="HTML source that contains fadepanel tags." />
+        <param name="hpp" type="radio" default="0" label="Hide primary panel" description="Enable to hide the primary panel during the animation. If your panels have transparent areas the primary panel usually needs to be hidden. If your panels are opaque prefer not to hide the primary panel to gain speed. Default value: No">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+    </params>
+    <params group="advanced">
+        <param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+            <option value="1">Use global</option>
+            <option value="0">No caching</option>
+        </param>
+        <param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+    </params>
+</install>
